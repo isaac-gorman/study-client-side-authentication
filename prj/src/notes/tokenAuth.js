@@ -14,7 +14,7 @@
 // Q: What do modern web servers use when dealing with JSON use?
 // - Instead of cookies, most modern servers will just use JWT's.
 // - These JWT's issued by the server are strings of cryptic text which can be stored on the client side by using local storage of session storage.
-// - But the server can easily tell the server that it issued a token, in fact itws can also read the token and make certian decisions for data transfer based on the client's permission
+// - But the server can easily tell the server that it issued a token, in fact it can also read the token and make certian decisions for data transfer based on the client's permission
 
 // Q: What is usually the payload of a common login endpoint?
 // - Usually there is a login endpoint that exist on the server, which takes a payload of username, and password
@@ -22,6 +22,6 @@
 // _ After the server responds with this new JWT, its up to the app to add an " Authorazation: <token/> " header to every request to be allowed access to proteced resources that require athentication.
 
 // FOLLOW ALONG
-// - Q: What are am I going to do?
+// - Q: What am I going to do?
 // - I am going to create an Axios configuration that attaches an Authoraztion: <token/> header to request.
 // -
